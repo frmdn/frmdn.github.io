@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KPR Calculator</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <h1 class="text-center">Kalkulator KPR</h1>
+  <div class="row">
+    <div class="col-sm-6">
+      <form id="form-main">
+    <div class="form-group">
+      <label for="num1">Harga Rumah</label>
+    <input type="text" class="form-control" id="num1" />
+    </div>
+    <div class="form-group">
+      <label for="num2">DP (%)</label>
+    <input type="text" class="form-control" id="num2" />
+    </div>
+    <div class="form-group">
+      <label for="num3">Jangka Waktu</label>
+    <input type="text" class="form-control" id="num3" />
+    </div>
+    <div class="form-group">
+      <label for="num4">Margin Bank</label>
+    <input type="text" class="form-control" id="num4" />
+    </div>
+        <div class="text-center">
+          <button type="button" class="btn btn-primary" id="btn-submit">Hitung</button>
+        </div>
+  </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Tips Mengambil KPR</h3>
+      <ul>
+        <li>Punya penghasilan tetap. Belum ada Bank yang menerima daun kering untuk pembayaran</li>
+        <li>Tentukan lokasi dan harga patokan rumah yang akan dibeli. Pikirkan juga nilai investasinya.</li>
+        <li>Menikahlah. Selain bisa menggabungkan penghasilan bersama, siapa yang betah dirumah sendiri, sendirian ?</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <blockquote>
+  <p>"Cicilan KPR itu berat. Kamu ga akan kuat. Biar mas saja."</p>
+  <footer>Fachri Ramadhan in <cite title="Source Title">How To Be a Jerk</cite></footer>
+</blockquote>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="notifikasi" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center">Simulasi</h4>
+      </div>
+      <div class="modal-body">
+        <p>Cicilan yang harus dicicil adalah <strong><span id="cicilan"></span></strong></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" id="close-modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<footer class="footer">
+  <p class="text-center">Frmdn's Work &copy; 2018</p>
+</footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
